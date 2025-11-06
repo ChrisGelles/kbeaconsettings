@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39F66505C36D5409255E0289 /* Pods_KBeaconSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BEF0B260E4F9F1A17B32B1 /* Pods_KBeaconSettings.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BEDF9B22EBC508F00357282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BEDF99C2EBC508E00357282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BEDF9A32EBC508E00357282;
+			remoteInfo = KBeaconSettings;
+		};
+		6BEDF9BC2EBC508F00357282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BEDF99C2EBC508E00357282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BEDF9A32EBC508E00357282;
+			remoteInfo = KBeaconSettings;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6BEDF9A42EBC508E00357282 /* KBeaconSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBeaconSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BEDF9B12EBC508F00357282 /* KBeaconSettingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KBeaconSettingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BEDF9BB2EBC508F00357282 /* KBeaconSettingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KBeaconSettingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4CA9C9338BE8BDF54661833 /* Pods-KBeaconSettings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBeaconSettings.release.xcconfig"; path = "Target Support Files/Pods-KBeaconSettings/Pods-KBeaconSettings.release.xcconfig"; sourceTree = "<group>"; };
+		E9BEF0B260E4F9F1A17B32B1 /* Pods_KBeaconSettings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KBeaconSettings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F656E9406476ECFE896F64 /* Pods-KBeaconSettings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBeaconSettings.debug.xcconfig"; path = "Target Support Files/Pods-KBeaconSettings/Pods-KBeaconSettings.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6BA33D212EBC576200D24A2A /* Exceptions for "KBeaconSettings" folder in "KBeaconSettings" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6BEDF9A32EBC508E00357282 /* KBeaconSettings */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6BEDF9A62EBC508E00357282 /* KBeaconSettings */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6BA33D212EBC576200D24A2A /* Exceptions for "KBeaconSettings" folder in "KBeaconSettings" target */,
+			);
+			path = KBeaconSettings;
+			sourceTree = "<group>";
+		};
+		6BEDF9B42EBC508F00357282 /* KBeaconSettingsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KBeaconSettingsTests;
+			sourceTree = "<group>";
+		};
+		6BEDF9BE2EBC508F00357282 /* KBeaconSettingsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KBeaconSettingsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BEDF9A12EBC508E00357282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F66505C36D5409255E0289 /* Pods_KBeaconSettings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEDF9AE2EBC508F00357282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEDF9B82EBC508F00357282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BEDF99B2EBC508E00357282 = {
+			isa = PBXGroup;
+			children = (
+				6BEDF9A62EBC508E00357282 /* KBeaconSettings */,
+				6BEDF9B42EBC508F00357282 /* KBeaconSettingsTests */,
+				6BEDF9BE2EBC508F00357282 /* KBeaconSettingsUITests */,
+				6BEDF9A52EBC508E00357282 /* Products */,
+				7B15918FB814F1FEC59B37ED /* Pods */,
+				757870EED5D786E530916D29 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BEDF9A52EBC508E00357282 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BEDF9A42EBC508E00357282 /* KBeaconSettings.app */,
+				6BEDF9B12EBC508F00357282 /* KBeaconSettingsTests.xctest */,
+				6BEDF9BB2EBC508F00357282 /* KBeaconSettingsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		757870EED5D786E530916D29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9BEF0B260E4F9F1A17B32B1 /* Pods_KBeaconSettings.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B15918FB814F1FEC59B37ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8F656E9406476ECFE896F64 /* Pods-KBeaconSettings.debug.xcconfig */,
+				C4CA9C9338BE8BDF54661833 /* Pods-KBeaconSettings.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BEDF9A32EBC508E00357282 /* KBeaconSettings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BEDF9C52EBC508F00357282 /* Build configuration list for PBXNativeTarget "KBeaconSettings" */;
+			buildPhases = (
+				33002922F4F440394A68042D /* [CP] Check Pods Manifest.lock */,
+				6BEDF9A02EBC508E00357282 /* Sources */,
+				6BEDF9A12EBC508E00357282 /* Frameworks */,
+				6BEDF9A22EBC508E00357282 /* Resources */,
+				83B10542640479C052F648B0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6BEDF9A62EBC508E00357282 /* KBeaconSettings */,
+			);
+			name = KBeaconSettings;
+			productName = KBeaconSettings;
+			productReference = 6BEDF9A42EBC508E00357282 /* KBeaconSettings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BEDF9B02EBC508F00357282 /* KBeaconSettingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BEDF9C82EBC508F00357282 /* Build configuration list for PBXNativeTarget "KBeaconSettingsTests" */;
+			buildPhases = (
+				6BEDF9AD2EBC508F00357282 /* Sources */,
+				6BEDF9AE2EBC508F00357282 /* Frameworks */,
+				6BEDF9AF2EBC508F00357282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BEDF9B32EBC508F00357282 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6BEDF9B42EBC508F00357282 /* KBeaconSettingsTests */,
+			);
+			name = KBeaconSettingsTests;
+			productName = KBeaconSettingsTests;
+			productReference = 6BEDF9B12EBC508F00357282 /* KBeaconSettingsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BEDF9BA2EBC508F00357282 /* KBeaconSettingsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BEDF9CB2EBC508F00357282 /* Build configuration list for PBXNativeTarget "KBeaconSettingsUITests" */;
+			buildPhases = (
+				6BEDF9B72EBC508F00357282 /* Sources */,
+				6BEDF9B82EBC508F00357282 /* Frameworks */,
+				6BEDF9B92EBC508F00357282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BEDF9BD2EBC508F00357282 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6BEDF9BE2EBC508F00357282 /* KBeaconSettingsUITests */,
+			);
+			name = KBeaconSettingsUITests;
+			productName = KBeaconSettingsUITests;
+			productReference = 6BEDF9BB2EBC508F00357282 /* KBeaconSettingsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BEDF99C2EBC508E00357282 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					6BEDF9A32EBC508E00357282 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					6BEDF9B02EBC508F00357282 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 6BEDF9A32EBC508E00357282;
+					};
+					6BEDF9BA2EBC508F00357282 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 6BEDF9A32EBC508E00357282;
+					};
+				};
+			};
+			buildConfigurationList = 6BEDF99F2EBC508E00357282 /* Build configuration list for PBXProject "KBeaconSettings" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BEDF99B2EBC508E00357282;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6BEDF9A52EBC508E00357282 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BEDF9A32EBC508E00357282 /* KBeaconSettings */,
+				6BEDF9B02EBC508F00357282 /* KBeaconSettingsTests */,
+				6BEDF9BA2EBC508F00357282 /* KBeaconSettingsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BEDF9A22EBC508E00357282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEDF9AF2EBC508F00357282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEDF9B92EBC508F00357282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33002922F4F440394A68042D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KBeaconSettings-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83B10542640479C052F648B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KBeaconSettings/Pods-KBeaconSettings-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KBeaconSettings/Pods-KBeaconSettings-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KBeaconSettings/Pods-KBeaconSettings-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BEDF9A02EBC508E00357282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEDF9AD2EBC508F00357282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEDF9B72EBC508F00357282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BEDF9B32EBC508F00357282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BEDF9A32EBC508E00357282 /* KBeaconSettings */;
+			targetProxy = 6BEDF9B22EBC508F00357282 /* PBXContainerItemProxy */;
+		};
+		6BEDF9BD2EBC508F00357282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BEDF9A32EBC508E00357282 /* KBeaconSettings */;
+			targetProxy = 6BEDF9BC2EBC508F00357282 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6BEDF9C32EBC508F00357282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = GC7U46RN4Q;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BEDF9C42EBC508F00357282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GC7U46RN4Q;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BEDF9C62EBC508F00357282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F656E9406476ECFE896F64 /* Pods-KBeaconSettings.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GC7U46RN4Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KBeaconSettings/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisgelles.KBeaconSettings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BEDF9C72EBC508F00357282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4CA9C9338BE8BDF54661833 /* Pods-KBeaconSettings.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GC7U46RN4Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KBeaconSettings/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisgelles.KBeaconSettings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6BEDF9C92EBC508F00357282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GC7U46RN4Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisgelles.KBeaconSettingsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KBeaconSettings.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KBeaconSettings";
+			};
+			name = Debug;
+		};
+		6BEDF9CA2EBC508F00357282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GC7U46RN4Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisgelles.KBeaconSettingsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KBeaconSettings.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KBeaconSettings";
+			};
+			name = Release;
+		};
+		6BEDF9CC2EBC508F00357282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GC7U46RN4Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisgelles.KBeaconSettingsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KBeaconSettings;
+			};
+			name = Debug;
+		};
+		6BEDF9CD2EBC508F00357282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GC7U46RN4Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisgelles.KBeaconSettingsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KBeaconSettings;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BEDF99F2EBC508E00357282 /* Build configuration list for PBXProject "KBeaconSettings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEDF9C32EBC508F00357282 /* Debug */,
+				6BEDF9C42EBC508F00357282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BEDF9C52EBC508F00357282 /* Build configuration list for PBXNativeTarget "KBeaconSettings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEDF9C62EBC508F00357282 /* Debug */,
+				6BEDF9C72EBC508F00357282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BEDF9C82EBC508F00357282 /* Build configuration list for PBXNativeTarget "KBeaconSettingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEDF9C92EBC508F00357282 /* Debug */,
+				6BEDF9CA2EBC508F00357282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BEDF9CB2EBC508F00357282 /* Build configuration list for PBXNativeTarget "KBeaconSettingsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEDF9CC2EBC508F00357282 /* Debug */,
+				6BEDF9CD2EBC508F00357282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BEDF99C2EBC508E00357282 /* Project object */;
+}
