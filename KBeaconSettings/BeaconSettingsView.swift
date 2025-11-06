@@ -10,7 +10,7 @@ import kbeaconlib2
 
 struct BeaconSettingsView: View {
     let beacon: KBeacon
-    @ObservedObject var beaconManager: BeaconManager
+    var beaconManager: BeaconManager  // Changed from @ObservedObject - we don't need to watch for updates
     
     @State private var password: String = ""
     @State private var isConnected = false
@@ -26,6 +26,15 @@ struct BeaconSettingsView: View {
     
     let txPowerLevels = [-40, -20, -16, -12, -8, -4, 0, 3, 4]
     
+    var rssiText: String {
+        let rssi = beacon.rssi
+        print("📡 BeaconSettingsView RSSI: \(rssi)")
+        guard rssi != 0 && rssi > -128 && rssi < 0 else {
+            return "N/A"
+        }
+        return "\(rssi) dBm"
+    }
+    
     var body: some View {
         NavigationView {
             Form {
@@ -35,6 +44,7 @@ struct BeaconSettingsView: View {
                         Spacer()
                         Text(beacon.name ?? "Unknown")
                             .foregroundColor(.secondary)
+                            .textSelection(.enabled)
                     }
                     HStack {
                         Text("MAC Address")
@@ -42,20 +52,28 @@ struct BeaconSettingsView: View {
                         Text(beacon.mac ?? "N/A")
                             .font(.system(.caption, design: .monospaced))
                             .foregroundColor(.secondary)
+                            .textSelection(.enabled)
                     }
                     HStack {
                         Text("RSSI")
                         Spacer()
-                        Text("\(beacon.rssi) dBm")
+                        Text(rssiText)
                             .foregroundColor(.secondary)
+                            .textSelection(.enabled)
                     }
                 }
                 
                 if !isConnected {
                     Section(header: Text("Authentication")) {
-                        SecureField("Password", text: $password)
-                            .textContentType(.password)
-                            .autocapitalization(.none)
+                        PasteFriendlyTextField(
+                            text: $password,
+                            placeholder: "Password (16 hex chars)",
+                            keyboardType: .asciiCapable,
+                            isSecure: false,
+                            contentType: .oneTimeCode
+                        )
+                        .font(.system(.body, design: .monospaced))
+                        .id("password-field")
                         
                         if let error = errorMessage {
                             Text(error)
@@ -64,15 +82,8 @@ struct BeaconSettingsView: View {
                         }
                         
                         Button(action: connectToBeacon) {
-                            if isConnecting {
-                                HStack {
-                                    ProgressView()
-                                    Text("Connecting...")
-                                }
-                            } else {
-                                Text("Connect")
-                                    .frame(maxWidth: .infinity)
-                            }
+                            Text(isConnecting ? "Connecting..." : "Connect")
+                                .frame(maxWidth: .infinity)
                         }
                         .disabled(isConnecting || password.isEmpty)
                     }
@@ -81,6 +92,7 @@ struct BeaconSettingsView: View {
                         Text(currentSettings)
                             .font(.caption)
                             .foregroundColor(.secondary)
+                            .textSelection(.enabled)
                     }
                     
                     Section(header: Text("TX Power")) {
@@ -97,8 +109,12 @@ struct BeaconSettingsView: View {
                     }
                     
                     Section(header: Text("Broadcast Interval")) {
-                        TextField("Milliseconds", text: $broadcastInterval)
-                            .keyboardType(.numberPad)
+                        PasteFriendlyTextField(
+                            text: $broadcastInterval,
+                            placeholder: "Milliseconds",
+                            keyboardType: .numberPad
+                        )
+                        .id("interval-field")
                         
                         Text("Recommended: 100-10000 ms. Lower values drain battery faster.")
                             .font(.caption)
@@ -124,6 +140,7 @@ struct BeaconSettingsView: View {
             }
             .navigationTitle("Beacon Settings")
             .navigationBarTitleDisplayMode(.inline)
+            .scrollDismissesKeyboard(.never)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Close") {
@@ -173,7 +190,14 @@ struct BeaconSettingsView: View {
             }
             
             let interval = slotCfg.getAdvPeriod()
-            broadcastInterval = String(format: "%.0f", interval)
+            print("📊 Raw interval from beacon: \(interval), isNaN: \(interval.isNaN), isInfinite: \(interval.isInfinite)")
+            // Guard against NaN or invalid values
+            if !interval.isNaN && !interval.isInfinite && interval > 0 {
+                broadcastInterval = String(format: "%.0f", interval)
+            } else {
+                print("⚠️ Invalid interval detected, using default")
+                broadcastInterval = "1000" // safe default
+            }
         }
         
         currentSettings = """
@@ -185,7 +209,11 @@ struct BeaconSettingsView: View {
     }
     
     func applySettings() {
-        guard let interval = Float(broadcastInterval), interval >= 100, interval <= 10000 else {
+        guard let interval = Float(broadcastInterval), 
+              !interval.isNaN, 
+              !interval.isInfinite,
+              interval >= 100, 
+              interval <= 10000 else {
             errorMessage = "Invalid interval. Must be between 100-10000 ms"
             return
         }

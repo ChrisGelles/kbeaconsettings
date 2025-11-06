@@ -18,18 +18,17 @@ struct ContentView: View {
             VStack {
                 if beaconManager.beacons.isEmpty {
                     VStack(spacing: 20) {
-                        Image(systemName: "antenna.radiowaves.left.and.right")
+                        Image(systemName: "dot.radiowaves.left.and.right")
                             .font(.system(size: 60))
                             .foregroundColor(.gray)
                         Text("No beacons found")
                             .font(.headline)
                             .foregroundColor(.secondary)
                         if beaconManager.isScanning {
-                            ProgressView()
-                                .padding(.top, 10)
                             Text("Scanning...")
                                 .font(.caption)
-                                .foregroundColor(.secondary)
+                                .foregroundColor(.blue)
+                                .padding(.top, 10)
                         }
                     }
                     .padding()
@@ -84,13 +83,19 @@ struct BeaconRow: View {
             Spacer()
             
             VStack(alignment: .trailing, spacing: 4) {
-                Text("\(beacon.rssi) dBm")
-                    .font(.caption)
-                    .foregroundColor(rssiColor(beacon.rssi))
-                
-                Image(systemName: "antenna.radiowaves.left.and.right")
-                    .font(.caption)
-                    .foregroundColor(rssiColor(beacon.rssi))
+                if beacon.rssi != 0 && beacon.rssi > -128 && beacon.rssi < 0 {
+                    Text("\(beacon.rssi) dBm")
+                        .font(.caption)
+                        .foregroundColor(rssiColor(beacon.rssi))
+                    
+                    Circle()
+                        .fill(rssiColor(beacon.rssi))
+                        .frame(width: 8, height: 8)
+                } else {
+                    Text("N/A")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
             }
         }
         .padding(.vertical, 4)
